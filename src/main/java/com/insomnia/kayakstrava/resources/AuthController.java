@@ -1,14 +1,9 @@
 package com.insomnia.kayakstrava.resources;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -33,7 +28,6 @@ public class AuthController {
 	public ResponseEntity<Object> helloWorld(@RequestParam(required = true) String authToken) {
 		log.debug("Got a token to auth against Strava {}", authToken);
 		RestTemplate restTemplate = new RestTemplate();
-
 		
 		String urlString = "https://www.strava.com/api/v3/oauth/token";
 

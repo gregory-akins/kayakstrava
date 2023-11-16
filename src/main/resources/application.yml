@@ -7,4 +7,5 @@ logging:
   pattern:
     console: "%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %mdc %-5level %logger{36}.%M - %msg%n"  
     
-   
+clientId: "00000"
+clientSecret: "qwertyuiopasdfghjklzxcvbnm"  
