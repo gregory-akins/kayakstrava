@@ -3,9 +3,20 @@ server:
   
 logging:
   level:
-    root: ${DEBUG}
+    root: ${INFO}
   pattern:
     console: "%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %mdc %-5level %logger{36}.%M - %msg%n"  
     
 clientId: "00000"
 clientSecret: "qwertyuiopasdfghjklzxcvbnm"  
+
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE    
+    mapper:
+      ACCEPT_CASE_INSENSITIVE_ENUMS: true        
+  data:
+    mongodb:
+      database: kayakstrava
+      uri: mongodb+srv://angrygreg:Peq5HYFZSpLVLVyl@kayakstrava.xy0c6er.mongodb.net/?retryWrites=true&w=majority
+

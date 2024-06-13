@@ -1,6 +1,11 @@
 server:
   port: 5000
   
+spring:
+   data:
+      mongodb:
+         uri: mongodb://gakins:E5press0@localhost:27017/madie?authSource=admin&maxPoolSize=50&connectTimeoutMS=2000&serverSelectionTimeoutMS=2000  
+  
 logging:
   level:
     root: ${DEBUG}
