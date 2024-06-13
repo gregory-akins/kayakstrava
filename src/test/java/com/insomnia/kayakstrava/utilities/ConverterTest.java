@@ -27,7 +27,7 @@ class ConverterTest {
 		     Optional<StravaActivity> activityOpt = converter.convertTo(jsonObject, StravaActivity.class);
 		     StravaActivity activity = activityOpt.get();
 		     assertNotNull(activity);
-		     assertEquals(activity.getId(), 1);
+		     assertEquals(activity.getId(), "1");
 		     assertEquals(activity.getName(), "ERG");
 		     assertEquals(activity.getType(), "Kayaking");
 		     DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX");

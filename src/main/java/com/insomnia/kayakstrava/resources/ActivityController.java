@@ -45,9 +45,7 @@ public class ActivityController {
 			) {
 
 		
-		if(StringUtils.isBlank(lastId)) {
-			lastId = Long.toString(Long.MAX_VALUE);
-		}
+
 		log.debug("Getting Activities, page {}, last_id = {} ", page, lastId);
 		
 		URIBuilder builder = new URIBuilder()

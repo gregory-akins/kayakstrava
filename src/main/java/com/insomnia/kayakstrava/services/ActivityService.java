@@ -41,6 +41,10 @@ public class ActivityService {
 		if (StringUtils.isBlank(perPage)) {
 			perPage = "10";
 		}
+		
+		if(StringUtils.isBlank(previousLastId)) {
+			previousLastId = Long.toString(Long.MAX_VALUE);
+		}
 		builder.addParameter("per_page", perPage);
 
 		builder.addParameter("page", page);
